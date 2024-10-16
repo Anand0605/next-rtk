@@ -9,16 +9,17 @@ const Slice = createSlice({
     name:"addUserSlice",
     initialState,
     reducers:{
-        addUsers:(state, action)=>{
+        addUser:(state, action)=>{
+            console.log(action)
             const data = {
                 id:nanoid(),
-                name:action.name
+                name:action.payload
             }
             state.users.push(data)
         }
     }
 })
 
-export const {addUsers} = Slice.actions
+export const {addUser} = Slice.actions
 
 export default  Slice.reducer
