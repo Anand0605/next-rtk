@@ -24,7 +24,8 @@ const AddUsers = () => {
             <button onClick={userDispatch}>Add Users</button>
             <br />
             <Link style={{marginTop:20}} href="/removeUser">removeUser</Link><br />
-            <Link href="/todolist">Go to todo page</Link>
+            <Link href="/todolist">Go to todo page</Link><br/>
+            <Link href="/apiusers">Go to api users</Link>
         </div>
     )
 }
